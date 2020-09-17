@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "s+ILYsyAMtUJTjm5eyLOMnapPGgA0l+vSEoV7i0I4uFr6q5JYGYCu2iIcB4Nbp/xgF/a386zfJLVayOiXiH2dg==",
+  "dgSpecHash": "Gva5KyfHxjfx+AXC2euSWGRAxFoXzS6m0eHdZpb+UGhmcInwCAqLkxq1+joARHxuxfQKsDe8kGDVF6l+kcH/Hg==",
   "success": true,
   "projectFilePath": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.Service\\SalesTransaction.Application.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
