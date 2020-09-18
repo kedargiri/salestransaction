@@ -29,11 +29,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {
-              "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.WebApi\\SalesTransaction.Application.WebApi.csproj": {
-                "projectPath": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.WebApi\\SalesTransaction.Application.WebApi.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -69,9 +65,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -166,6 +159,9 @@
               },
               "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.Model\\SalesTransaction.Application.Model.csproj": {
                 "projectPath": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.Model\\SalesTransaction.Application.Model.csproj"
+              },
+              "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web.csproj": {
+                "projectPath": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web.csproj"
               }
             }
           }
@@ -200,14 +196,14 @@
         }
       }
     },
-    "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.WebApi\\SalesTransaction.Application.WebApi.csproj": {
+    "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.WebApi\\SalesTransaction.Application.WebApi.csproj",
-        "projectName": "SalesTransaction.Application.WebApi",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.WebApi\\SalesTransaction.Application.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web.csproj",
+        "projectName": "SalesTransaction.Application.Web",
+        "projectPath": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -236,6 +232,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

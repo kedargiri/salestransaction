@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SalesTransaction.Application.DataAccessLayer\SalesTransaction.Application.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\SalesTransaction.Application.Model\SalesTransaction.Application.Model.csproj" />
+    <ProjectReference Include="..\SalesTransaction.Application.Service\SalesTransaction.Application.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -40,9 +40,10 @@ namespace SalesTransaction.Application.Service.Account
         {
             using(var con = _da.GetConnection())
             {
-                var cmd = con.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "select (select UserName, Password from UserTable where UserName = '" + login.UserName + "' and Password = '" + login.Password + "' for json path, without_array_wrapper) as Json";
+                SqlCommand cmd = new SqlCommand("SpUserTableSel", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@UserName", login.UserName);
+                cmd.Parameters.AddWithValue("@Password", login.Password);
                 cmd.CommandTimeout = _commandTimeout;
 
                 using (SqlDataReader dr = cmd.ExecuteReader())
@@ -77,16 +78,37 @@ namespace SalesTransaction.Application.Service.Account
 
             using (var con = _da.GetConnection())
             {
-                var cmd = con.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-
                 dynamic jsonnew = JsonConvert.DeserializeObject(Json);
-              
+
+                SqlCommand cmd = new SqlCommand("SpCustomerSearch", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Json",Json.ToString());
+
+
+                using (SqlDataReader dr = cmd.ExecuteReader())
+                {
+                    try
+                    {
+                        if (dr.HasRows)
+                        {
+                            return _da.GetJson(dr);
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                        throw ex;
+                    }
+                }
             }
 
 
 
-            throw new NotImplementedException();
+            
         }
     }
 }

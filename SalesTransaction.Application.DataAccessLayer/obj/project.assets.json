@@ -239,19 +239,6 @@
             "rid": "win"
           }
         }
-      },
-      "SalesTransaction.Application.WebApi/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/SalesTransaction.Application.WebApi.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SalesTransaction.Application.WebApi.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -780,17 +767,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "SalesTransaction.Application.WebApi/1.0.0": {
-      "type": "project",
-      "path": "../SalesTransaction.Application.WebApi/SalesTransaction.Application.WebApi.csproj",
-      "msbuildProject": "../SalesTransaction.Application.WebApi/SalesTransaction.Application.WebApi.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Newtonsoft.Json >= 12.0.3",
-      "SalesTransaction.Application.WebApi >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 4.7.0",
       "System.Data.SqlClient >= 4.8.2"
     ]
@@ -824,11 +805,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.WebApi\\SalesTransaction.Application.WebApi.csproj": {
-              "projectPath": "C:\\Users\\lenovo\\source\\repos\\SalesTransaction.Application.Web\\SalesTransaction.Application.WebApi\\SalesTransaction.Application.WebApi.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -864,9 +841,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

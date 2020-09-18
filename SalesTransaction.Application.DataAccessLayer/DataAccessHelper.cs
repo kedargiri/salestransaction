@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using Newtonsoft.Json;
-using Microsoft.Extensions.Configuration;
 
 namespace SalesTransaction.Application.DataAccessLayer
 {
