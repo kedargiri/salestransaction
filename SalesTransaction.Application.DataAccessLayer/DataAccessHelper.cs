@@ -37,9 +37,9 @@ namespace SalesTransaction.Application.DataAccessLayer
         public void setConnection()
         {
             _cn = new SqlConnection(_cnString);
-            if (_cn.State == ConnectionState.Closed)
+            if (_cn.State == System.Data.ConnectionState.Closed)
             {
-                _cn.Close();
+                _cn.Open();
             }
             else
             {

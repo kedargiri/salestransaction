@@ -1,9 +1,8 @@
-C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.AssemblyInfoInputs.cache
-C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.AssemblyInfo.cs
-C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\bin\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.deps.json
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\bin\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.dll
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\bin\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.pdb
-C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.dll
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.pdb

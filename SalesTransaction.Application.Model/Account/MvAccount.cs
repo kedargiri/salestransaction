@@ -10,6 +10,7 @@ namespace SalesTransaction.Application.Model.Account
     }
     public class MvLogin
     {
+        public int userId { get;  set; }
         public string UserName { get; set; }
 
         public string Password { get; set; }

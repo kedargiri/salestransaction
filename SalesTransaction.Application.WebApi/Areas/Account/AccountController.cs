@@ -18,6 +18,11 @@ namespace SalesTransaction.Application.WebApi.Areas.Account
         {
             _accountservice = accountService;
         }
+        [HttpGet]
+        public IActionResult view()
+        {
+            return Ok("ok");
+        }
 
         [HttpPost]
 
@@ -49,8 +54,9 @@ namespace SalesTransaction.Application.WebApi.Areas.Account
                 throw ex;
             }
         }
+        
 
 
-        }
+    }
     }
 

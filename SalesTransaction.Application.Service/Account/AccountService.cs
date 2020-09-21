@@ -5,8 +5,9 @@ using System.Data.SqlClient;
 using System.Data;
 using SalesTransaction.Application.DataAccessLayer;
 using SalesTransaction.Application.Model.Account;
-using Microsoft.Extensions.Configuration;
+
 using Newtonsoft.Json;
+using Microsoft.Extensions.Configuration;
 
 namespace SalesTransaction.Application.Service.Account
 {
@@ -22,7 +23,7 @@ namespace SalesTransaction.Application.Service.Account
         {
             _configuration = configuration;
 
-            dynamic connectionString = _configuration.GetSection("ConnectionString");
+            dynamic connectionString = _configuration.GetSection("ConnectionStrings");
             _connectionString = connectionString["DefaultConnection"];
 
             if (_connectionString != null)
@@ -82,7 +83,7 @@ namespace SalesTransaction.Application.Service.Account
 
                 SqlCommand cmd = new SqlCommand("SpCustomerSearch", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Json",Json.ToString());
+                cmd.Parameters.AddWithValue("@UserId",Json.ToString());
 
 
                 using (SqlDataReader dr = cmd.ExecuteReader())
