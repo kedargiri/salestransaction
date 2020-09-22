@@ -8,6 +8,7 @@ using SalesTransaction.Application.Service.Account;
 using SalesTransaction.Application.Model.Account;
 
 
+
 namespace SalesTransaction.Application.WebApi.Areas.Account
 {
     public class AccountController : BaseController
@@ -18,20 +19,16 @@ namespace SalesTransaction.Application.WebApi.Areas.Account
         {
             _accountservice = accountService;
         }
-        [HttpGet]
-        public IActionResult view()
-        {
-            return Ok("ok");
-        }
+       
+     
 
         [HttpPost]
-
         public IActionResult Login([FromBody] MvLogin login)
         {
             try
             {
-                var jsonString = _accountservice.GetLogin(login);
-                return (jsonString);
+                dynamic jsonString = _accountservice.GetLogin(login);
+                return Ok(jsonString);
             }
             catch (Exception ex)
             {
@@ -45,8 +42,8 @@ namespace SalesTransaction.Application.WebApi.Areas.Account
         {
             try
             {
-                var jsonString = _accountservice.GetUserDetail(json);
-                return (jsonString);
+                dynamic jsonString = _accountservice.GetUserDetail(json);
+                return Ok(jsonString);
             }
             catch (Exception ex)
             {

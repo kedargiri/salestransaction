@@ -28,8 +28,6 @@ C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.A
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.csprojAssemblyReference.cache
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.AssemblyInfoInputs.cache
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.AssemblyInfo.cs
-C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.csproj.CoreCompileInputs.cache
-C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.csproj.CopyComplete
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\staticwebassets\SalesTransaction.Application.WebApi.StaticWebAssets.Manifest.cache
@@ -37,3 +35,8 @@ C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.A
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.dll
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.pdb
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.WebApi\obj\Debug\netcoreapp3.1\SalesTransaction.Application.WebApi.MvcApplicationPartsAssemblyInfo.cache

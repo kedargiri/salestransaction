@@ -6,3 +6,4 @@ C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.A
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.dll
 C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.pdb
+C:\Users\lenovo\source\repos\SalesTransaction.Application.Web\SalesTransaction.Application.DataAccessLayer\obj\Debug\netcoreapp3.1\SalesTransaction.Application.DataAccessLayer.csprojAssemblyReference.cache

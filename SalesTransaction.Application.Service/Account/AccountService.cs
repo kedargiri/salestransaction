@@ -39,15 +39,22 @@ namespace SalesTransaction.Application.Service.Account
 
         public dynamic GetLogin(MvLogin login)
         {
-            using(var con = _da.GetConnection())
+
+            
+            using (var con = _da.GetConnection())
             {
-                SqlCommand cmd = new SqlCommand("SpUserTableSel", con);
+                SqlCommand cmd = new SqlCommand("SpUserLogin", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@UserName", login.UserName);
-                cmd.Parameters.AddWithValue("@Password", login.Password);
+                //cmd.Parameters.Add(new SqlParameter("@Json", SqlDbType.NVarChar));
+                cmd.Parameters.Add(new SqlParameter("@UserName", login.UserName));
+                cmd.Parameters.Add(new SqlParameter("@Password", login.Password));
+                // cmd.Parameters.AddWithValue("@UserName",login.UserName);
+                //cmd.Parameters.AddWithValue("@Password", login.Password);
+                //cmd.Parameters.AddWithValue("@Json", Json.ToString());
+
                 cmd.CommandTimeout = _commandTimeout;
 
-                using (SqlDataReader dr = cmd.ExecuteReader())
+                using (var  dr = cmd.ExecuteReader())
                 {
                     try
                     {
@@ -76,14 +83,15 @@ namespace SalesTransaction.Application.Service.Account
 
         public dynamic GetUserDetail(string Json)
         {
-
             using (var con = _da.GetConnection())
             {
+               
+
+                SqlCommand cmd = new SqlCommand("SpUserLoginSearch", con);
+                cmd.CommandType = CommandType.StoredProcedure;
                 dynamic jsonnew = JsonConvert.DeserializeObject(Json);
 
-                SqlCommand cmd = new SqlCommand("SpCustomerSearch", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@UserId",Json.ToString());
+                cmd.Parameters.AddWithValue("@UserId",Convert.ToString(jsonnew.UserId));
 
 
                 using (SqlDataReader dr = cmd.ExecuteReader())
