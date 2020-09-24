@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { LoginComponent } from './login/login.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -49,6 +50,7 @@ const appRoutes: Routes = [
     //   ])
     // ],
     RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

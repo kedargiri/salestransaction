@@ -90,7 +90,6 @@ namespace SalesTransaction.Application.Service.Account
                 SqlCommand cmd = new SqlCommand("SpUserLoginSearch", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 dynamic jsonnew = JsonConvert.DeserializeObject(Json);
-
                 cmd.Parameters.AddWithValue("@UserId",Convert.ToString(jsonnew.UserId));
 
 
