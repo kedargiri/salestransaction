@@ -11,6 +11,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using SalesTransaction.Application.Service.Account;
+using SalesTransaction.Application.Service.Customer;
+using SalesTransaction.Application.Service.Product;
+using SalesTransaction.Application.Service.ProductRate;
+using SalesTransaction.Application.Service.Sales;
+using SalesTransaction.Application.Service.SalesTransaction;
 
 namespace SalesTransaction.Application.WebApi
 {
@@ -34,13 +39,21 @@ namespace SalesTransaction.Application.WebApi
                     {
                         builder.WithOrigins("http://localhost:5500",
                             "http://localhost:4200")
-                                .WithMethods("{POST}", "GET");
+                               .AllowAnyMethod()
+                                .AllowAnyHeader()
+                                .AllowCredentials();
+                                //.WithMethods("{POST}", "GET");
                     });
             });
 
             services.AddControllers();
                   
             services.AddTransient<IAccountService, AccountService>();
+            services.AddTransient<ICustomerService, CustomerService>();
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IProductRateService, ProductRateService>();
+            services.AddTransient<ISalesTransactionService, SalesTransactionService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

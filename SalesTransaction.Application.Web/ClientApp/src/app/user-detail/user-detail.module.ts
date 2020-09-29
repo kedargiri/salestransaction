@@ -6,7 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: ':id',
+    // path: '',
     component: UserDetailComponent
   }
 ];

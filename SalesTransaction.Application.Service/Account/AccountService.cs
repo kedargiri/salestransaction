@@ -118,5 +118,47 @@ namespace SalesTransaction.Application.Service.Account
 
             
         }
+
+
+        public dynamic GetAllUserDetail()
+        {
+            using (var con = _da.GetConnection())
+            {
+
+
+                SqlCommand cmd = new SqlCommand("SearchUserTable", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                //dynamic jsonnew = JsonConvert.DeserializeObject();
+                //cmd.Parameters.AddWithValue("@UserId", Convert.ToString(jsonnew.UserId));
+
+
+                using (SqlDataReader dr = cmd.ExecuteReader())
+                {
+                    try
+                    {
+                        if (dr.HasRows)
+                        {
+                            return _da.GetJson(dr);
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                        throw ex;
+                    }
+                }
+            }
+
+
+
+
+        }
+
+
+
     }
 }

@@ -20,8 +20,8 @@ export class LoginComponent implements OnInit, OnDestroy, AfterViewInit {
   loginForm: FormGroup;
   errorMessage: any;
   errorMessageType: any = {
-    invForm: 'Invalid Form!',
-    invLogin: 'Invalid UserName or Password!'
+    invForm: 'Invalid Form',
+    invLogin: 'Invalid UserName or Password'
   };
 
   logInFormErrors: any = {
@@ -80,7 +80,7 @@ export class LoginComponent implements OnInit, OnDestroy, AfterViewInit {
       this.ls.getLogin(this.login).subscribe((response: any) => {
 
         if (response) {
-          this.openSnakbar('Login successful!', 'success');
+          this.openSnackbar('Login successful!', 'success');
           this.router.navigate(['/user-detail']);
         } else {
           this.errorMessage = this.errorMessageType.invLogin;
@@ -90,7 +90,7 @@ export class LoginComponent implements OnInit, OnDestroy, AfterViewInit {
       this.errorMessage = this.errorMessageType.invForm;
     }
   }
-  openSnakbar(message: string, action: string) {
+  openSnackbar(message: string, action: string) {
     this.snackBar.open(message, 'close', {
       duration: 5000,
       panelClass: [action],
